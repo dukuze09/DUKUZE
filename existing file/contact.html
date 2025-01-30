@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<header>
+    <a href="#" class="logo">Forensic<span>Study</span></a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="course.html">COURSES</a>
+        <a href="team.html">OUR-TEAM</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<h1 class="heading">Contact Us</h1>
+
+<section class="contact">
+    <div class="image">
+        <img src="images/images.jpg" alt="Contact Us">
+    </div>
+    <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateEmail()">
+        <input type="hidden" name="access_key" value="8fd78e85-7a7e-442a-b028-e2f9cbb3b9cd">
+
+        <div class="inputBox">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="email" placeholder="Email" name="email" id="email" required>
+        </div>
+        
+        <input type="text" placeholder="Subject" class="box" name="subject" required>
+        <textarea placeholder="Message" name="message" cols="30" rows="10" required></textarea>
+        
+        <button type="submit" class="btn">Send</button>
+    </form>
+</section>
+
+<section class="footer">
+    <div class="credit"> We are <span>G1 &copy; 2024</span>. All Rights Reserved.</div>
+</section>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

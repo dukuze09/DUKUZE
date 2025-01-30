@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basics of forensic psychology</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <!-- Menu Section -->
+  <header>
+    <a href="#" class="logo">Forensic<span>Study</span></a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="course.html">COURSES</a>
+        <a href="team.html">OUR-TEAM</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+  <div class="banner">
+    <h1 id="h1">Welcome to our Forensic Studies</h1>
+</div>
+
+  <div class="main-content">
+      <div class="chapter-list">
+          <h2>Chapters</h2>
+          <ul>
+              <li><a href="#" onclick="openChapter(0),
+               document.getElementById('h1').innerHTML='understanding why people commit rapings'">
+               Chapter1: Rapings</a></li>
+              <li><a href="#" onclick="openChapter(1),
+              document.getElementById('h1').innerHTML='exprole why prostitute are potential criminals'">
+              Chapter2: prostitution</a></li>
+              <li><a href="#" onclick="openChapter(2),
+              document.getElementById('h1').innerHTML='Exprole lying Mind'">
+              Chapter3: Lie and Liar</a></li>
+          </ul>
+      </div>
+
+      <div class="chapter-display" id="chapterDisplay">
+          <img id="chapterImage" src="images/forensic.png" alt="Chapter Content" />
+          <div class="navigation-buttons">
+              <button onclick="prevSlide()">Previous</button>
+              <button onclick="nextSlide()">Next</button>
+              <button onclick="toggleFullScreen()">Fullscreen</button>
+              <button onclick="closeChapter(),
+              document.getElementById('h1').innerHTML='Welcome to our Forensic Studies ',
+              document.getElementById('chapterImage').src='images/forensic.png'">Cancel</button>
+          </div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="credit"> We are <span>G1 &copy; 2024</span>. All Rights Reserved.</div>
+  </section>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
